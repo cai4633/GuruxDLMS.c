@@ -32,7 +32,7 @@
 #include "../../dlms/include/server.h"
 #include "../../dlms/include/date.h"
 #include "../../dlms/include/gxserializer.h"
-
+#include "../../dlms/include/serverevents.h"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -206,7 +206,7 @@ void GXTRACE(const char* str, const char* data)
 		char data[10];
     uint32_t value = HAL_GetTick();
     uart_traceWrite((const char*) "\t:");
-		sprintf(data, " %ld", value);
+		//sprintf(data, " %ld", value);
 		uart_traceWrite(data);
     uart_traceWrite((const char*) "\t");
     uart_traceWrite(str);
@@ -538,9 +538,9 @@ gxValueEventCollection* args)
 }
 
 unsigned char svr_isTarget(
-	dlmsSettings *settings,
-	unsigned long serverAddress,
-	unsigned long clientAddress)
+	dlmsSettings* settings,
+	uint32_t serverAddress,
+	uint32_t clientAddress)
 {
 	//Check server address using serial number.
 	if ((serverAddress & 0x3FFF) == SERIAL_NUMBER % 10000 + 1000)

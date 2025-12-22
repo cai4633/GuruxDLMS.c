@@ -1,11 +1,11 @@
 guruxdlmssimpleserverexample2/gxinvoke.o: ..\dlms\src\gxinvoke.c \
   ..\dlms\src\..\include\gxignore.h ..\dlms\src\..\include\gxmem.h \
-  C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\string.h \
+  D:\MDK5.36\ARM\ARMCLANG\Bin\..\include\string.h \
   ..\dlms\src\..\include\cosem.h ..\dlms\src\..\include\gxobjects.h \
+  ..\dlms\src\..\include\gxint.h \
+  D:\MDK5.36\ARM\ARMCLANG\Bin\..\include\stdint.h \
   ..\dlms\src\..\include\enums.h ..\dlms\src\..\include\variant.h \
   ..\dlms\src\..\include\date.h ..\dlms\src\..\include\bytebuffer.h \
-  ..\dlms\src\..\include\gxint.h \
-  C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\stdint.h \
   ..\dlms\src\..\include\errorcodes.h ..\dlms\src\..\include\bitarray.h \
   ..\dlms\src\..\include\gxarray.h ..\dlms\src\..\include\gxkey.h \
   ..\dlms\src\..\include\gxdefine.h \
